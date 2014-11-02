@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delivice</title>
+    <link href="../../delivice-homepage/home.css" type="text/css" rel="stylesheet"/>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+</head>
+<body>
+<div class="navOuter">
+    <div class="navTitle outer">
+        <div class="inner">
+            <div class="eltTitle">
+
+            </div>
+        </div>
+    </div>
+    <div class="navElt outer">
+        <div class="inner">
+            <div class="eltInner">
+                FAQ
+            </div>
+        </div>
+    </div>
+    <div class="navElt outer">
+        <div class="inner">
+            <div class="eltInner">
+                Contact
+            </div>
+        </div>
+    </div>
+    <div class="navElt outer">
+        <div class="inner">
+            <div class="eltInner">
+                About
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fullWrap">
+    <div class="blur">
+        <div class="titleOuter outer">
+            <div class="titleInner inner">
+                <div class="wrap">
+                    <div class="title">
+                        Delivice
+                    </div>
+                    <div class="subtitle">
+                        Bring Healthy to your Front Door
+                    </div>
+                    <div class="buttonContain">
+                        <div class="buttonHalf">
+                            <div class="buttonOuter">
+                                <div class="buttonInner">
+                                    Shop Whole Foods
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttonHalf">
+                            <div class="buttonOuter">
+                                <div class="buttonInner">
+                                    Shop Kroger
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottomArrow">
+    <div class="Arrow">
+
+    </div>
+</div>
+<div class="fullWrap" id="first" style="background: white;">
+
+</div>
+<script>
+    $(window).scroll(function() {
+        if($(window).scrollTop() > 0) {
+            $('.navOuter').addClass("navOuterBot", 300);
+        } else {
+            $('.navOuter').removeClass("navOuterBot", 300);
+        }
+    })
+
+    $('.Arrow').click(function() {
+        $('html,body').animate({
+            scrollTop: $('#first').offset().top
+        }, 600);
+    })
+</script>
+</body>
+
+
+
+</html>
