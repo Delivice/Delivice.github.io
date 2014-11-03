@@ -12,7 +12,9 @@ body {
     width:100%;
     position:fixed;
     z-index: 100;
+    transition: all .4s ease;
 }
+
 
 .navElt {
     float:right;
@@ -50,7 +52,7 @@ body {
     background: rgba(225, 225, 225, 0.20);
 }
 
-.navOuterBot {
+.navOuter.Bot {
     background:#46A349;
     height:65px;
 }
