@@ -31,7 +31,7 @@ body {
     margin-left: 20px;
     background-size: contain;
     width: 155px;
-    height: 70px;
+    height: 100%;
 
 }
 
@@ -52,7 +52,7 @@ body {
 
 .navOuterBot {
     background:#46A349;
-    height:75px;
+    height:65px;
 }
 
 /* TOP PAGE CLASSES */
