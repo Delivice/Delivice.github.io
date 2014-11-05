@@ -3,7 +3,7 @@
 <head>
     <title>Delivice</title>
     <link href="home.css" type="text/css" rel="stylesheet"/>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 </head>
@@ -75,13 +75,56 @@
 
     </div>
 </div>
-<div class="fullWrap" id="first" style="background: white;">
-
+<div class="section" id="first" style="background: white;">
+    <div class="sectionHeader">
+        Same-Day Grocery Delivery
+    </div>
+    <div class="holder">
+        <div class="obj" id="store"></div>
+        <div class="obj" id="cart"></div>
+        <div class="obj" id="person"></div>
+    </div>
+</div>
+<div class="f">
+    <div class="fLinksContain">
+        <div class="fLink">Blog</div>
+        <div class="fLink">Jobs</div>
+        <div class="fLink">Find</div>
+        <div class="fLink">Cash</div>
+        <div class="fLink">Shop</div>
+    </div>
+    <div class="socialContainer">
+        <div class="socialIcon">
+            <div class="socialIconInner" id="facebook"></div>
+        </div>
+        <div class="socialIcon">
+            <div class="socialIconInner" id="twitter"></div>
+        </div>
+        <div class="socialIcon">
+            <div class="socialIconInner" id="instagram"></div>
+        </div>
+        <div class="socialIcon">
+            <div class="socialIconInner"id="googlePlus"></div>
+        </div>
+    </div>
+    <div class="fLogo"></div>
 </div>
 <script>
+
+    var done = false;
+    var moveBag = function() {
+        if(!done) {
+            $('#cart').animate({right:'0px'},1000,"swing");
+            done = !done;
+        }
+    }
+
     $(window).scroll(function() {
         if($(window).scrollTop() > 0) {
             $('.navOuter').addClass("Bot");
+            if($(window).scrollTop() > 400) {
+                moveBag();
+            }
         } else {
             $('.navOuter').removeClass("Bot");
         }
@@ -90,7 +133,7 @@
     $('.Arrow').click(function() {
         $('html,body').animate({
             scrollTop: $('#first').offset().top
-        }, 600);
+        }, 800);
     })
 </script>
 </body>
