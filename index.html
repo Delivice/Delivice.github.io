@@ -76,15 +76,76 @@
     </div>
 </div>
 <div class="section" id="first" style="background: white;">
+    <!--<div class="sky"></div>-->
+    <!--<div class="ground"></div>-->
+
     <div class="sectionHeader">
         Same-Day Grocery Delivery
     </div>
+    <div class="subHeader">
+        for Ann Arbor Residents
+    </div>
     <div class="holder">
         <div class="obj" id="store"></div>
+        <div class="obj sideArrow"></div>
         <div class="obj" id="cart"></div>
+        <div class="obj sideArrow"></div>
         <div class="obj" id="person"></div>
     </div>
 </div>
+<div class="section" id="how">
+
+    <div class="howToHolder">
+        <div class="taskOuter">
+            <div class="taskInner">
+                <div class="topNum">
+                    <div class="inner">1</div>
+                </div>
+                <div class="taskIcon" id="book"></div>
+                <div class="taskText">
+                    Book an Order Time
+                </div>
+            </div>
+        </div>
+        <div class="taskOuter">
+            <div class="taskInner">
+                <div class="topNum">
+                    <div class="inner">2</div>
+                </div>
+                <div class="taskIcon"  id="shop"></div>
+                <div class="taskText">
+                    Shop Online
+                </div>
+            </div>
+        </div>
+        <div class="taskOuter">
+            <div class="taskInner">
+                <div class="topNum">
+                    <div class="inner">3</div>
+                </div>
+                <div class="taskIcon"  id="checkout"></div>
+                <div class="taskText">
+                    Checkout Order
+                </div>
+            </div>
+        </div>
+        <div class="taskOuter">
+            <div class="taskInner">
+                <div class="topNum">
+                    <div class="inner">4</div>
+                </div>
+                <div class="taskIcon"  id="grocery"></div>
+                <div class="taskText">
+                    Get the GROC
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="area"></div>
+<div class="area"></div>
+
+<!--FOOTER-->
 <div class="f">
     <div class="fLinksContain">
         <div class="fLink">Blog</div>
@@ -109,6 +170,7 @@
     </div>
     <div class="fLogo"></div>
 </div>
+
 <script>
 
     var done = false;
@@ -132,7 +194,7 @@
 
     $('.Arrow').click(function() {
         $('html,body').animate({
-            scrollTop: $('#first').offset().top
+            scrollTop: $('#first').offset().top - 65
         }, 800);
     })
 </script>

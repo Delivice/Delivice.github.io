@@ -179,31 +179,112 @@ body {
 .sectionHeader {
     width:100%;
     text-align: center;
-    color:#46A349;
-    font-size: 50px;
+    font-size: 40px;
     position: relative;
+    color:#272727;
+    font-weight: 600;
+}
+
+.subHeader {
+    text-align: center;
+    font-size: 25px;
+    margin:10px 0;
+    color: #272727;
 }
 
 .obj {
     height:100%;
-    width:200px;
+    width:20%;
+    float:left;
 }
 
 #store {
     float:left;
-    background:url("img/Store11-4.png") center no-repeat;
+    background:url("img/Store11-4.png") bottom no-repeat;
     background-size: contain;
 }
 
 #person {
     float:right;
-    background:url("img/House11-4.png") center no-repeat;
+    background:url("img/House11-4.png") bottom no-repeat;
     background-size: contain;
 }
 
 #cart {
     float:left;
-    background:url("img/Bag11-4.png") center no-repeat;
+    background:url("img/Bag11-4.png") bottom no-repeat;
+    background-size: contain;
+
+}
+
+
+/* How To Section */
+
+#how {
+    background:#e1e1e1;
+}
+
+.howToHolder {
+    width:1050px;
+    margin:0 auto;
+    height:auto;
+    text-align: center;
+    display: table;
+}
+
+.taskOuter {
+    width:25%;
+    float:left;
+}
+
+.topNum {
+    height:50px;
+    width:50px;
+    margin:0 auto;
+    background: #d0d0d0;
+    border-radius: 100%;
+    color: #929292;
+    font-weight: 600;
+    font-size: 30px;
+    display: table;
+    margin-bottom: 30px;
+}
+
+.taskIcon {
+    height:130px;
+    width:60%;
+    margin:0 auto;
+    background-size: contain;
+    background:black;
+    margin-bottom: 30px;
+}
+
+.taskText {
+    font-weight: 600;
+    width:80%;
+    margin:0 auto;
+    font-size: 22px;
+    color: #464646;
+
+}
+
+#book {
+    background: url("img/Store11-4.png") center no-repeat;
+    background-size: contain;
+}
+
+#shop {
+    background: url("https://m1.behance.net/rendition/modules/141660749/disp/baf2ed313f2e2584674a4c5ba8457c80.png") center no-repeat;
+    background-size: contain;
+}
+
+#checkout {
+    background: url("img/House11-4.png") center no-repeat;
+    background-size: contain;
+}
+
+#grocery {
+    background: url("img/Bag11-4.png") center no-repeat;
     background-size: contain;
 }
 
@@ -280,15 +361,27 @@ body {
 
 /* COMMON CLASSES */
 
+.area {
+    width:100%;
+    height:800px;
+    background: #86a9e1;
+}
+
 .section {
-    margin:150px 0;
+    padding:70px 0;
+}
+
+.sectionBuffer {
+    height:auto;
+    width:100%;
 }
 
 .holder {
-    width:50%;
+    width:800px;
     height:200px;
     margin:30px auto;
     position: relative;
+    display: none;
 }
 
 .outer {
