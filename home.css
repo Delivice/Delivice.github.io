@@ -65,6 +65,13 @@ body {
     background:url("http://images5.alphacoders.com/454/454233.jpg") center no-repeat;
 }
 
+#vid {
+    display:none;
+    width:100%;
+    position: absolute;
+    z-index:-10;
+}
+
 .blur {
     background: rgba(0, 0, 0, 0.21);
     height:100%;
@@ -141,7 +148,6 @@ body {
     position: absolute;
     width:100%;
     height:auto;
-
 }
 
 
@@ -192,32 +198,6 @@ body {
     color: #272727;
 }
 
-.obj {
-    height:100%;
-    width:20%;
-    float:left;
-}
-
-#store {
-    float:left;
-    background:url("img/Store11-4.png") bottom no-repeat;
-    background-size: contain;
-}
-
-#person {
-    float:right;
-    background:url("img/House11-4.png") bottom no-repeat;
-    background-size: contain;
-}
-
-#cart {
-    float:left;
-    background:url("img/Bag11-4.png") bottom no-repeat;
-    background-size: contain;
-
-}
-
-
 /* How To Section */
 
 #how {
@@ -233,7 +213,7 @@ body {
 }
 
 .taskOuter {
-    width:25%;
+    width:20%;
     float:left;
 }
 
@@ -251,7 +231,8 @@ body {
 }
 
 .taskIcon {
-    height:130px;
+    height:80px;
+    max-height: 80px;
     width:60%;
     margin:0 auto;
     background-size: contain;
@@ -268,24 +249,127 @@ body {
 
 }
 
+#store {
+    background: url("img/Store.png") center no-repeat;
+    background-size: contain;
+}
+
+
 #book {
-    background: url("img/Store11-4.png") center no-repeat;
+    background: url("img/StopWatch.png") center no-repeat;
     background-size: contain;
 }
 
 #shop {
-    background: url("https://m1.behance.net/rendition/modules/141660749/disp/baf2ed313f2e2584674a4c5ba8457c80.png") center no-repeat;
+    background: url("img/ShopOnline.png") center no-repeat;
     background-size: contain;
 }
 
 #checkout {
-    background: url("img/House11-4.png") center no-repeat;
+    background: url("img/ShoppingCart.png") center no-repeat;
     background-size: contain;
 }
 
 #grocery {
     background: url("img/Bag11-4.png") center no-repeat;
     background-size: contain;
+}
+
+/* SHOW CLASSES */
+
+.show {
+    padding:120px 0px;
+    background: #F7F7F7;
+}
+
+.showOuter {
+    height:570px;
+    margin:0 auto;
+}
+
+.showTitle {
+    color:#46A349;
+    font-size:65px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.showContent {
+    color:#777;
+    font-size: 26px;
+}
+
+.showText{
+    width:50%;
+    height:100%;
+    float:left;
+    display: table;
+}
+
+.showTextInner {
+    display:table-cell;
+    vertical-align: middle;
+    padding:0 100px;
+}
+
+.showPic {
+    width:50%;
+    height:100%;
+    float:left;
+    background:url("img/LaptopDelivice.png") left no-repeat;
+    background-size:cover;
+}
+
+/* TEAM CLASSES */
+
+.teamOuter {
+    width:1000px;
+    margin: 45px auto 0px auto;
+    display: table;
+
+}
+
+.teamInner {
+
+}
+
+.member {
+    width:25%;
+    float:left;
+    height:auto;
+    margin-bottom:25px;
+}
+
+.memberInner {
+    margin:0 30px;
+    background:#e1e1e1;
+    border-radius: 8px;
+    padding:20px;
+    border-bottom: 5px solid #C2C2C2;
+}
+
+.memPic {
+    height:150px;
+    width:150px;
+    margin:0 auto;
+    background: url("https://scontent-b-ord.xx.fbcdn.net/hphotos-xpf1/t31.0-8/860955_10151683019556981_1460819270_o.jpg") center no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.memName {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding-top:10px;
+}
+
+.memTitle {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
 }
 
 /* FOOTER CLASSES */
@@ -310,8 +394,7 @@ body {
     width: 300px;
     margin:0 auto 30px auto;
     height:auto;
-    font-family:'Open Sans';
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .fLink {
@@ -364,7 +447,7 @@ body {
 .area {
     width:100%;
     height:800px;
-    background: #86a9e1;
+    background: #e1e1e1;
 }
 
 .section {

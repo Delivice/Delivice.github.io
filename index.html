@@ -3,9 +3,8 @@
 <head>
     <title>Delivice</title>
     <link href="home.css" type="text/css" rel="stylesheet"/>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300' rel='stylesheet' type='text/css'>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" ></script>
 </head>
 <body>
 <div class="navOuter">
@@ -39,6 +38,11 @@
     </div>
 </div>
 <div class="fullWrap">
+    <video  id="vid" autoload="auto" autoplay="true" muted="true" loop="loop">
+        <source src="img/musicvid.webm" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
     <div class="blur">
         <div class="titleOuter outer">
             <div class="titleInner inner">
@@ -75,6 +79,7 @@
 
     </div>
 </div>
+
 <div class="section" id="first" style="background: white;">
     <!--<div class="sky"></div>-->
     <!--<div class="ground"></div>-->
@@ -85,13 +90,6 @@
     <div class="subHeader">
         for Ann Arbor Residents
     </div>
-    <div class="holder">
-        <div class="obj" id="store"></div>
-        <div class="obj sideArrow"></div>
-        <div class="obj" id="cart"></div>
-        <div class="obj sideArrow"></div>
-        <div class="obj" id="person"></div>
-    </div>
 </div>
 <div class="section" id="how">
 
@@ -101,9 +99,9 @@
                 <div class="topNum">
                     <div class="inner">1</div>
                 </div>
-                <div class="taskIcon" id="book"></div>
+                <div class="taskIcon" id="store"></div>
                 <div class="taskText">
-                    Book an Order Time
+                    Choose Your Store
                 </div>
             </div>
         </div>
@@ -111,6 +109,17 @@
             <div class="taskInner">
                 <div class="topNum">
                     <div class="inner">2</div>
+                </div>
+                <div class="taskIcon" id="book"></div>
+                <div class="taskText">
+                    Book a Delivery Time
+                </div>
+            </div>
+        </div>
+        <div class="taskOuter">
+            <div class="taskInner">
+                <div class="topNum">
+                    <div class="inner">3</div>
                 </div>
                 <div class="taskIcon"  id="shop"></div>
                 <div class="taskText">
@@ -121,7 +130,7 @@
         <div class="taskOuter">
             <div class="taskInner">
                 <div class="topNum">
-                    <div class="inner">3</div>
+                    <div class="inner">4</div>
                 </div>
                 <div class="taskIcon"  id="checkout"></div>
                 <div class="taskText">
@@ -132,19 +141,77 @@
         <div class="taskOuter">
             <div class="taskInner">
                 <div class="topNum">
-                    <div class="inner">4</div>
+                    <div class="inner">5</div>
                 </div>
                 <div class="taskIcon"  id="grocery"></div>
                 <div class="taskText">
-                    Get the GROC
+                    Receive your Groceries!
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="area"></div>
-<div class="area"></div>
+<div class="show">
+    <div class="showOuter">
+        <div class="showText">
+            <div class="showTextInner">
+                <div class="showTitle">
+                    As Easy as Pie
+                </div>
+                <div class="showContent">
+                    This is text This is text This is text This is text This is text
+                    This is text This is text This is text This is text This is text
+                    This is text This is text This is text This is text This is text
+                </div>
+            </div>
+        </div>
+        <div class="showPic">
 
+        </div>
+    </div>
+</div>
+<div class="section" style="background:#f0f0f0">
+    <div class="sectionHeader">The Team</div>
+    <div class="teamOuter">
+        <div class="teamInner">
+            <div class="member">
+                <div class="memberInner">
+                <div class="memPic"></div>
+                <div class="memName">Benny Wang</div>
+                <div class="memTitle">CEO founder</div>
+                </div>
+            </div>
+            <div class="member">
+                <div class="memberInner">
+                <div class="memPic"></div>
+                <div class="memName">John Smith</div>
+                <div class="memTitle">Driver</div>
+                    </div>
+            </div>
+            <div class="member">
+                <div class="memberInner">
+                    <div class="memPic"></div>
+                    <div class="memName">John Smith</div>
+                    <div class="memTitle">Driver</div>
+                </div>
+            </div>
+            <div class="member">
+                <div class="memberInner">
+                    <div class="memPic"></div>
+                    <div class="memName">John Smith</div>
+                    <div class="memTitle">Driver</div>
+                </div>
+            </div>
+            <div class="member">
+                <div class="memberInner">
+                    <div class="memPic"></div>
+                    <div class="memName">John Smith</div>
+                    <div class="memTitle">Driver</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!--FOOTER-->
 <div class="f">
     <div class="fLinksContain">
