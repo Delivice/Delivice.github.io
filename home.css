@@ -278,7 +278,7 @@ body {
 /* SHOW CLASSES */
 
 .show {
-    padding:120px 0px;
+    padding:70px 0px;
     background: #F7F7F7;
 }
 
@@ -320,6 +320,15 @@ body {
     background:url("img/LaptopDelivice.png") left no-repeat;
     background-size:cover;
 }
+
+/* ABOUT CLASSES */
+
+#about {
+    background:#e1e1e1;
+    padding:80px 0;
+}
+
+
 
 /* TEAM CLASSES */
 
