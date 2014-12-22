@@ -18,32 +18,27 @@
     </div>
     <div class="navElt outer">
         <div class="inner">
-            <div class="eltInner">
-                FAQ
-            </div>
-        </div>
-    </div>
-    <div class="navElt outer">
-        <div class="inner">
-            <div class="eltInner">
+            <div class="eltInner" id="contact">
                 Contact
             </div>
         </div>
     </div>
     <div class="navElt outer">
         <div class="inner">
-            <div class="eltInner">
+            <div class="eltInner" id="about">
                 About
+            </div>
+        </div>
+    </div>
+    <div class="navElt outer">
+        <div class="inner">
+            <div class="eltInner" id="how-to">
+                How-To
             </div>
         </div>
     </div>
 </div>
 <div class="fullWrap">
-    <video  id="vid" autoload="auto" autoplay="true" muted="true" loop="loop">
-        <source src="img/musicvid.webm" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
-        Your browser does not support the video tag.
-    </video>
     <div class="blur">
         <div class="titleOuter outer">
             <div class="titleInner inner">
@@ -75,8 +70,8 @@
         </div>
     </div>
 </div>
-<div class="bottomArrow">
-    <div class="Arrow">
+<div id="bottomArrow">
+    <div id="Arrow">
 
     </div>
 </div>
@@ -94,7 +89,7 @@
 <!--</div>-->
 <div id="how">
     <div id="howHeader">How to Order</div>
-    <div class="howToHolder">
+    <div id="howToHolder">
         <div class="taskOuter">
             <div class="taskInner">
                 <div class="tInner">
@@ -201,24 +196,24 @@
     </div>
 
 </div>
-<div class="show">
-    <div class="showOuter">
-        <div class="showText">
-            <div class="showTextInner">
-                <div class="showContent">
+<div id="show">
+    <div id="showOuter">
+        <div id="showText">
+            <div id="showTextInner">
+                <div id="showContent">
                     Delivice makes shopping for Groceries easier than ever before.
                 </div>
             </div>
         </div>
-        <div class="showPic">
+        <div id="showPic">
 
         </div>
     </div>
 </div>
 <div class="section" style="background:#f0f0f0">
     <div class="sectionHeader">The Team</div>
-    <div class="teamOuter">
-        <div class="teamInner">
+    <div id="teamOuter">
+        <div id="teamInner">
             <div class="member">
                 <div class="memberInner">
                     <div class="memPic"></div>
@@ -285,30 +280,35 @@
 
 <script>
 
-    var done = false;
-    var moveBag = function() {
-        if(!done) {
-            $('#cart').animate({right:'0px'},1000,"swing");
-            done = !done;
-        }
-    }
-
     $(window).scroll(function() {
         if($(window).scrollTop() > 0) {
             $('.navOuter').addClass("Bot");
-            if($(window).scrollTop() > 400) {
-                moveBag();
-            }
         } else {
             $('.navOuter').removeClass("Bot");
         }
     })
 
-    $('.Arrow').click(function() {
+    $('#Arrow').click(function() {
         $('html,body').animate({
-            scrollTop: $('#first').offset().top - 65
+            scrollTop: $(window).height() - 65
         }, 800);
     })
+    $('#how-to').click(function() {
+        $('html,body').animate({
+            scrollTop: $('#how').offset().top - 65
+        }, 800);
+    })
+    $('#contact').click(function() {
+        $('html,body').animate({
+            scrollTop: $('#why').offset().top - 65
+        }, 800);
+    })
+    $('#about').click(function() {
+        $('html,body').animate({
+            scrollTop: $('#show').offset().top - 65
+        }, 800);
+    })
+
 </script>
 </body>
 

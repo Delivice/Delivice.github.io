@@ -19,7 +19,7 @@ body {
 .navElt {
     float:right;
     height:100%;
-    width:150px;
+    width:145px;
 }
 
 .navTitle {
@@ -42,11 +42,11 @@ body {
     width:70px;
     margin: 0  auto;
     text-align: center;
-    border-radius: 4px;
     border: 2px solid white;
     color:white;
     cursor: pointer;
     font-weight: 700;
+    border-radius: 4px;
 }
 
 .eltInner:hover {
@@ -56,6 +56,7 @@ body {
 .navOuter.Bot {
     background:#46A349;
     height:65px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
 }
 
 /* TOP PAGE CLASSES */
@@ -144,7 +145,7 @@ body {
 
 /* ARROW CLASSES */
 
-.bottomArrow {
+#bottomArrow {
     bottom:15px;
     position: absolute;
     width:100%;
@@ -152,7 +153,7 @@ body {
 }
 
 
-.Arrow {
+#Arrow {
     width:70px;
     height:70px;
     margin:0 auto;
@@ -166,7 +167,7 @@ body {
     -webkit-animation-fill-mode: forwards;
 }
 
-.Arrow:hover {
+#Arrow:hover {
     -webkit-animation: lift .2s;
     -webkit-animation-fill-mode: forwards;
 }
@@ -236,7 +237,7 @@ body {
     padding:40px 0;
 }
 
-.howToHolder {
+#howToHolder {
     width:1120px;
     margin:0 auto;
     height:auto;
@@ -325,17 +326,17 @@ body {
 
 /* SHOW CLASSES */
 
-.show {
+#show {
     padding:70px 0px;
     background: #F7F7F7;
 }
 
-.showOuter {
+#showOuter {
     height:480px;
     margin:0 auto;
 }
 
-.showTitle {
+#showTitle {
     color:#46A349;
     font-size:65px;
     font-weight: 600;
@@ -343,26 +344,26 @@ body {
     margin-bottom: 15px;
 }
 
-.showContent {
+#showContent {
     color:#777;
     font-size: 36px;
     text-align: center;
 }
 
-.showText{
+#showText{
     width:50%;
     height:100%;
     float:left;
     display: table;
 }
 
-.showTextInner {
+#showTextInner {
     display:table-cell;
     vertical-align: middle;
     padding:0 100px;
 }
 
-.showPic {
+#showPic {
     width:50%;
     height:100%;
     float:left;
@@ -371,13 +372,6 @@ body {
 }
 
 /* WHY CLASSES */
-
-.inBetween {
-    padding:40px 0;
-    font-size: 28px;
-    font-weight: 300;
-    text-align: center;
-}
 
 #why {
     background:#fff;
@@ -430,14 +424,14 @@ body {
 
 /* TEAM CLASSES */
 
-.teamOuter {
+#teamOuter {
     width:1000px;
     margin: 45px auto 0px auto;
     display: table;
 
 }
 
-.teamInner {
+#teamInner {
 
 }
 
