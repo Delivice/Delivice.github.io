@@ -19,7 +19,11 @@ body {
 .navElt {
     float:right;
     height:100%;
-    width:145px;
+    width:125px;
+}
+
+#right {
+    margin-right: 30px;
 }
 
 .navTitle {
@@ -42,7 +46,7 @@ body {
     width:70px;
     margin: 0  auto;
     text-align: center;
-    border: 2px solid white;
+    border: 1px solid white;
     color:white;
     cursor: pointer;
     font-weight: 700;
@@ -255,7 +259,7 @@ body {
 }
 
 .tInner {
-    border:2px solid #CBCBCC;
+    border:1px solid #CBCBCC;
     background: #f3f3f3;
 }
 
